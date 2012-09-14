@@ -1,1 +1,28 @@
 Here i will be posting the commands to run the programs related to AI
+
+The commands are as follows:
+
+1 - To play the PACMAN game write the command in your terminal: python pacman.py
+
+2 - To see the Searching Algorithm to work write the following commands after the python keyword into the terminal:
+	-python pacman.py -l <mazename> -p SearchAgent -a fn=<searching function>
+	
+	replace the following with any of the below keyword:
+	<mazename> - tinyMaze 
+		   - mediumMaze
+		   - bigMaze
+		
+	<searchingfunction> - dfs (depth first search)
+			    - bfs (breath first search)
+			    - ucs (uniform cost search)
+			    - aster (A* Search)
+			   
+			   
+	example: 
+	-python pacman.py -l mediumMaze -p SearchAgent -a fn=dfs
+	
+	-while using 'astar' write like this to give it a heuristic function:
+	 python pacman.py -l bigMaze -p SearchAgent -a fn=astar,heuristic=manhattanHeuristic 
+	
+
+ THE SEARCHING PART CAN BE SEEN IN THE search.py python file file
